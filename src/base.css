@@ -199,6 +199,21 @@
 			}
 		}
 
+		&[data-variant="red"] {
+			background-color: var(--color-destructive);
+			color: var(--color-destructive-foreground);
+
+			&:hover {
+				background-color: var(--color-destructive);
+				filter: brightness(0.9);
+			}
+
+			&:active {
+				background-color: var(--color-destructive);
+				filter: brightness(0.8);
+			}
+		}
+
 		&[data-variant="link"] {
 			background-color: transparent;
 			color: var(--color-primary);
